@@ -1,0 +1,10 @@
+/* SITE BUTTON */
+
+.site-button {
+  @include site-button;
+}
+
+.site-button:hover {
+  mix-blend-mode: normal;
+  opacity: 0.4;
+}

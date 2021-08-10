@@ -1,0 +1,46 @@
+/* HERO SECTION */
+
+.hero-section {
+  background-color: $section-bg-fa;
+  background-image: url(../../img/hero-bg-desktop.png);
+  background-size: 820px 855px;
+  background-repeat: no-repeat;
+  background-position: top -88px right -30px;
+  position: relative;
+}
+
+.hero__content {
+  width: 100%;
+  max-width: 450px;
+  padding-top: 170px;
+  padding-bottom: 170px;
+}
+
+.hero__heading {
+  margin: 0;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: $color-text-dark;
+}
+
+.hero__text {
+  margin-top: 24px;
+  margin-bottom: 36px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.28125px;
+  color: $color-text-light;
+}
+
+.hero__img {
+  position: absolute;
+  top: -80px;
+  right: 0;
+  width: 620px;
+  height: 900px;
+}

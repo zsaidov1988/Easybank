@@ -1,0 +1,31 @@
+/* Reset list settings */
+@mixin reset-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Reset link settings */
+@mixin reset-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* Button general settings */
+@mixin site-button {
+  padding-top: 8px;
+  padding-right: 36px;
+  padding-bottom: 8px;
+  padding-left: 33px;
+  border: none;
+  border-radius: 22px;
+  color: $color-text-white;
+  background-color: $site-btn-bg;
+  background-image: $site-btn-gradient;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}

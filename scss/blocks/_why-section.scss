@@ -1,0 +1,107 @@
+/* WHY SECTION */
+
+.why-section {
+  background-color: $section-bg-f4;
+}
+
+.why {
+  padding-top: 96px;
+  padding-bottom: 94px;
+}
+
+.why__content {
+  width: 100%;
+  max-width: 635px;
+}
+
+.why__heading {
+  margin: 0;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 64px;
+  letter-spacing: -0.714286px;
+  color: $color-text-dark;
+}
+
+.why__text {
+  margin-top: 16px;
+  margin-bottom: 72px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.28125px;
+  color: $color-text-light;
+}
+
+.why__list {
+  @include reset-list;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.why__item {
+  width: 255px;
+}
+
+.why__item-span {
+  display: block;
+  width: 72px;
+  height: 72px;
+  border-radius: 36px;
+  background-image: $site-btn-gradient;
+}
+
+.why__item-span::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.why__item:nth-child(1) .why__item-span::before {
+  background-image: url(../../img/online.png);
+  background-size: 40px 40px;
+}
+
+.why__item:nth-child(2) .why__item-span::before {
+  background-image: url(../../img/simple.png);
+  background-size: 33px 40px;
+  background-position: top 16px left 24px;
+}
+
+.why__item:nth-child(3) .why__item-span::before {
+  background-image: url(../../img/fast.png);
+  background-size: 40px 40px;
+}
+
+.why__item:nth-child(4) .why__item-span::before {
+  background-image: url(../../img/open.png);
+  background-size: 40px 40px;
+}
+
+.why__item-heading {
+  margin-top: 40px;
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.428571px;
+  color: $color-text-dark;
+}
+
+.why__item-text {
+  margin-top: 26px;
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: $color-text-light;
+}
