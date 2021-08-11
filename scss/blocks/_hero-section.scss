@@ -37,10 +37,140 @@
   color: $color-text-light;
 }
 
+.hero__img-res {
+  display: none;
+  width: 550px; 
+  height: 676px;
+}
+
 .hero__img {
   position: absolute;
   top: -80px;
   right: 0;
   width: 620px;
   height: 900px;
+}
+
+@include breakpoint-down (1150px) {
+  .hero-section {
+    background-size: 492px 513px;
+    background-position: top -53px right 0;
+  }
+
+  .hero__img {
+    top: -50px;
+    width: 372px;
+    height: 540px;
+  }
+
+  .hero__content {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+@include breakpoint-down (900px) {
+  .hero__content {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .hero__heading {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  
+  .hero__text {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@include breakpoint-down (750px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-section {
+    background-size: 944px 728px;
+    background-position: top -61px left -194px;
+  }
+
+  .hero__img-res {
+    display: block;
+    margin-top: -80px;
+  }
+  
+  .hero__content {
+    width: 100%;
+    max-width: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero__heading {
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+  }
+  
+  .hero__text {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+  }
+  
+  .hero__img {
+    display: none;
+  }
+}
+
+@include breakpoint-down (575px) {
+
+  .hero-section {
+    background-size: 767px 515px;
+    background-position: top -61px left -162px;
+  }
+
+  .hero__img-res {
+    width: 450px;
+    height: 553px;
+  }
+}
+
+@include breakpoint-down (480px) {
+  .hero-section {
+    background-size: 655px 450px;
+    background-position: top -130px left -169px;
+  }
+
+  .hero__img-res {
+    width: 327px;
+    height: 402px;
+  }
+}
+
+@include breakpoint-down (350px) {
+  .hero-section {
+    background-size: 655px 450px;
+    background-position: top -157px left -210px;
+  }
+
+  .hero__heading {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .hero__img-res {
+    width: 300px;
+    height: 370px;
+  }
 }
