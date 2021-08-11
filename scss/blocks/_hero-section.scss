@@ -131,6 +131,10 @@
   .hero__img {
     display: none;
   }
+
+  .hero__btn {
+    margin-bottom: 30px;
+  }
 }
 
 @include breakpoint-down (575px) {
